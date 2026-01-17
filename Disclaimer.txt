@@ -1,0 +1,32 @@
+---
+
+### **Phase 2: Upload to GitHub**
+
+Now, let's push it.
+
+1.  **Go to GitHub.com** and sign in.
+2.  Click the **+** icon (top right) -> **New Repository**.
+3.  Name it `HomeGuard`.
+4.  **Do not** check "Add a README" (we already made one).
+5.  Click **Create repository**.
+
+Now, go back to your **PowerShell (Administrator)** window in your project folder and run these commands one by one:
+
+```powershell
+# 1. Initialize Git
+git init
+
+# 2. Add your files (The .gitignore will stop the messy files from being added)
+git add .
+
+# 3. Save the snapshot
+git commit -m "Initial commit - Network Scanner V1"
+
+# 4. Set the branch name
+git branch -M main
+
+# 5. Connect to your GitHub (REPLACE THIS URL WITH THE ONE GITHUB GAVE YOU)
+git remote add origin https://github.com/YOUR_USERNAME/HomeGuard.git
+
+# 6. Push the code
+git push -u origin main
