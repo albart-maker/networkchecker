@@ -1,0 +1,6 @@
+scapy
+flask
+mac-vendor-lookup
+customtkinter
+pyinstaller
+requests
